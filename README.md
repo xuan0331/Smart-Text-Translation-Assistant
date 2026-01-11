@@ -1,4 +1,4 @@
-# 🤖 智能文本翻译助手（wenbenshibie）
+# 🤖 智能文本翻译助手
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/Flask-3.0.0%2B-lightgrey)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -309,6 +309,7 @@ pyinstaller -y wenbenshibie.spec
 - Flask / Werkzeug / SQLAlchemy 开源社区
 - 腾讯云 API 与 Python SDK
 - PyInstaller 打包工具
+
 
 
 
