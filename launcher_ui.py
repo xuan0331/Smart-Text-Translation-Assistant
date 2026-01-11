@@ -35,8 +35,8 @@ def blend_color(fg_hex: str, opacity: float, bg_hex: str = DEFAULT_BG) -> str:
 APP_CMD = [sys.executable, "--run-server"] if IS_FROZEN else [sys.executable, __file__, "--run-server"]
 
 # 在这里填写或通过环境变量提供腾讯云密钥
-TENCENTCLOUD_SECRET_ID = os.getenv("TENCENTCLOUD_SECRET_ID", "AKID1veibWPEB2gAUbWFn8GC6ufFdyOcs46v")
-TENCENTCLOUD_SECRET_KEY = os.getenv("TENCENTCLOUD_SECRET_KEY", "f8OVVMBtTq0oaEj8LNFwRq357ze8PTKz")
+TENCENTCLOUD_SECRET_ID = os.getenv("TENCENTCLOUD_SECRET_ID", "")
+TENCENTCLOUD_SECRET_KEY = os.getenv("TENCENTCLOUD_SECRET_KEY", "")
 
 APP_URL = f"http://127.0.0.1:{config.PORT}/"
 ICON_CANDIDATES = [
@@ -451,4 +451,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
