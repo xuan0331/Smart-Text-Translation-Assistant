@@ -1,4 +1,8 @@
 # 🤖 智能文本翻译助手（wenbenshibie）
+https://img.shields.io/badge/Python-3.10%252B-blue
+https://img.shields.io/badge/Flask-3.0.0%252B-lightgrey
+https://img.shields.io/badge/License-MIT-green
+https://img.shields.io/github/last-commit/xuan0331/Smart-Text-Translation-Assistant
 
 > ✨ 一个基于 **Flask + SQLite + 腾讯云 API** 的多功能翻译助手，集成 **文本翻译 / 图片 OCR 识别 / 语音合成（TTS）/ 语音转文本（ASR）**，并提供登录注册与翻译历史记录管理。
 
@@ -305,6 +309,7 @@ pyinstaller -y wenbenshibie.spec
 - Flask / Werkzeug / SQLAlchemy 开源社区
 - 腾讯云 API 与 Python SDK
 - PyInstaller 打包工具
+
 
 
 
