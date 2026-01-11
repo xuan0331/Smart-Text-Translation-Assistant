@@ -283,7 +283,7 @@ pyinstaller -y wenbenshibie.spec
 
 ## 🖼️ 运行截图
 
-![image-20260111133725531](D:\c++ java  python code\wenbenshibie\image-20260111133725531.png)
+
 
 
 
@@ -305,3 +305,4 @@ pyinstaller -y wenbenshibie.spec
 - Flask / Werkzeug / SQLAlchemy 开源社区
 - 腾讯云 API 与 Python SDK
 - PyInstaller 打包工具
+
