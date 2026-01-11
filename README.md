@@ -282,7 +282,7 @@ pyinstaller -y wenbenshibie.spec
 
 
 ## 🖼️ 运行截图
-[1.png](https://github.com/xuan0331/Smart-Text-Translation-Assistant/blob/d3514b574971054579f43d779d35e6317bc50250/1.png)
+![1](1.png)
 
 
 
@@ -305,6 +305,7 @@ pyinstaller -y wenbenshibie.spec
 - Flask / Werkzeug / SQLAlchemy 开源社区
 - 腾讯云 API 与 Python SDK
 - PyInstaller 打包工具
+
 
 
 
