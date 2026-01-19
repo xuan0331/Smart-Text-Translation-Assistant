@@ -86,7 +86,6 @@ wenbenshibie/
 powershell
 
 ```
-cd "D:\c++ java  python code\wenbenshibie"
 python -m pip install -r requirements.txt
 ```
 
@@ -131,7 +130,6 @@ $env:TENCENTCLOUD_SECRET_KEY="你的SecretKey"
 powershell
 
 ```
-cd "D:\c++ java  python code\wenbenshibie"
 python app.py
 ```
 
@@ -144,12 +142,11 @@ python app.py
 
 - `http://127.0.0.1:5001/`
 
-### 🪟 启动 Windows 启动器（可选）
+### 🪟 启动 Windows 启动器
 
 powershell
 
 ```
-cd "D:\c++ java  python code\wenbenshibie"
 python launcher_ui.py
 ```
 
@@ -254,35 +251,10 @@ python launcher_ui.py
 powershell
 
 ```
-cd "D:\c++ java  python code\wenbenshibie"
 pyinstaller -y wenbenshibie.spec
 ```
 
 - `-y`：自动确认覆盖 `dist/`、`build/` 等输出目录中的旧文件。
-
-### 🧯 常见打包问题
-
-#### 📄 缺少模板/静态资源
-
-- 现象：运行时报 `FileNotFoundError: templates/...`
-- 解决：确保 spec 的 `datas=[('templates','templates'),('static','static'), ...]` 不被改坏。
-
-#### 🎧 ffmpeg 找不到
-
-- 现象：ASR 上传音频后报错找不到 `ffmpeg/ffprobe`
-- 解决：
-  1. 保证 `ffmpeg/bin` 在项目里；
-  2. spec 已把 `ffmpeg.exe/ffprobe.exe` 打包进去；
-  3. 若自定义目录，可用环境变量 `FFMPEG_BIN/FFPROBE_BIN` 指定。
-
-#### 🧊 退出时提示 Failed to remove temporary directory
-
-- 说明：PyInstaller 单文件模式会把资源解压到 `%TEMP%\_MEIxxxxxx`，进程退出时尝试清理；
-- 常见原因：仍有子进程/线程占用、某些文件句柄未完全释放；
-- 影响：通常不影响功能，只是清理失败的提示；如要彻底解决，需要确保退出前关闭所有子进程并释放文件占用。
-
-------
-
 
 
 ## 🖼️ 运行截图
@@ -309,6 +281,7 @@ pyinstaller -y wenbenshibie.spec
 - Flask / Werkzeug / SQLAlchemy 开源社区
 - 腾讯云 API 与 Python SDK
 - PyInstaller 打包工具
+
 
 
 
